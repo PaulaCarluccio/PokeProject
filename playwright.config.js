@@ -20,14 +20,20 @@ module.exports = defineConfig({
     },
     projects: [
         {
-            name: 'API TEST',
+            name: 'API Testing',
             testMatch: /.*\.api\.spec\.js$/,
-            use: { ...devices['Desktop Chrome'] },
+            use: {
+                ...devices['Desktop Chrome'],
+                headless: true,
+            },
         },
         {
-            name: 'Web TEST',
-            testMatch: /.*\.web\.spec\.js$/,
-            use: { ...devices['Desktop Chrome'] },
+            name: 'UI Testing',
+            testMatch: /.*\.ui\.spec\.js$/,
+            use: {
+                ...devices['Desktop Chrome'],
+                headless: true,
+            },
         },
     ],
 });
