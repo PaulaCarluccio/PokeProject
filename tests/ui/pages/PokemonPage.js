@@ -1,12 +1,12 @@
 const path = require('path');
-const { downloadImageToProjectFolder } = require('../../../config/utils');
 const BasePage = require('./BasePage');
 
 class PokemonPage extends BasePage {
     constructor(page, testInfo) {
         super(page);
         this.page = page;
-        this.testInfo = testInfo; // Añadido para almacenar testInfo
+        this.testInfo = testInfo;
+        //Locators
         this.pokemonTitle = '//div[@class="infobox-caption"]';
         this.pokemonArtist = '//div[@class="infobox-caption"]/a';
         this.pokemonImage = '//table[@class="infobox"]//img[@class="mw-file-element"]';
