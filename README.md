@@ -36,7 +36,7 @@ npx playwright install
 Create a .env file in the root of the project directory with the following content:
 <br>SECRET_KEY={your-secret-key}
 
-## 5. Run All Tests
+### 5. Run All Tests
 npx playwright test
 
 ### Run API Tests
